@@ -13,7 +13,6 @@ const max = 10;
 let i = 0;
 do {
     addendi[i] = parseInt(prompt('Inserisci ' + (i+1) + '° numero:'));
-    console.log(addendi[i]);
     if (isNaN(addendi[i])) {
         do {
             addendi[i] = parseInt(prompt('Dato non corretto.\nInserisci ' + (i+1) + '° numero:'));
