@@ -13,10 +13,8 @@ const max = 10;
 let i = 0;
 do {
     addendi[i] = parseInt(prompt('Inserisci ' + (i+1) + '° numero:'));
-    if (isNaN(addendi[i])) {
-        do {
-            addendi[i] = parseInt(prompt('Dato non corretto.\nInserisci ' + (i+1) + '° numero:'));
-        } while (isNaN(addendi[i]));
+    while (isNaN(addendi[i])) {
+        addendi[i] = parseInt(prompt('Dato non corretto.\nInserisci ' + (i+1) + '° numero:'));
     }
     somma += addendi[i];
     i++;
